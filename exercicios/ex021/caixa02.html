@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            box-shadow: 4px 5px 15px black;
+        /* Valores da box-shadow: deslocamento horizontal, vertical, blur e cor. */
+        /* Dica: cria a box-shadow com qualquer valores, depois vai no devtools, procuro o estilo que você criou e nele vai ter um quadrado, quando colocar o cursor sobre ele aparecerá o nome "open shadow editor" lá é melhor para editar a sombra. Quando chegar no ideal é só copiar os valores e colar no VSC. */
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        /* nav > a diz para o navegador para selecionar apenas os links filhos de nav, se houverem outros links na página eles não serão selecionados. Se usasse "nav a" pegaria todos os links dentro de nav, inclusive se estivessem dentro de outras tags, usando filho garante que vai pegar apenas os links que tiverem diretamente ligados a ela */
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px 10px 0px;
+            /* border-radius (valores): superior esquerdo, superior direito, inferior direito e inferior esquerdo. Segue o sentido horário a partir da primeira quina. Para transformar a figura em um círculo perfeito basta colocar 50%. */
+            box-shadow: 4px 5px 15px black;
+        }
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgb(165, 165, 165);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+     
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque similique cumque debitis libero distinctio ducimus deleniti maiores hic laboriosam voluptatibus magnam nihil impedit illum sed, architecto obcaecati, magni laudantium qui.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+    <!-- Header (cabeçalho), main (menu) e footer (rodapé) são praticamente divs, mas com semântica e trazem maior organização para o código -->
+    <!-- A tag nav identifica uma seção da página que contém links de navegação. -->
+   
+</body>
+</html>

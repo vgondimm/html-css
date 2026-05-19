@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h2>Usando links externos</h2>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no Github</a></p>
+    <!--O "target=_blank" pode ser adicionado se você quiser que abra uma nova aba em vez do link ser aberto na mesma. É o indicado para links externos.-->
+    <!--O "rel=external" também pode ser adicionado, rel vem de relativo, quer dizer que é relativo a um link externo-->
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="nofollow">canal gratuito no YouTube</a></p>
+    <!--O "rel=nofollow" diz ao buscador para não se perpetuar no site do link, e que você não coloca a mão no fogo pelo site, tambám serve para links de anúncios.-->
+    <!--Dica: segurando Alt e clicando no local desejado, você terá outro cursor de texto, então se quiser alterar mais de uma tag, basta segurar Alt e clicar depois de cada tag, apagar e escolher a nova.-->
+    <h2>Usando links internos</h2>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar a minha <a href="pag2.html" rel="next">segunda página</a>.</p>
+    <!--"rel=next" informa ao buscador que o link leva à próxima página. É indicado sempre colocar.-->
+    <p>Você também pode acessar nossa <a href="noticias/pag3.html">página de notícias</a>.</p>
+    <h2>Links para download</h2>
+    <ul>
+        <li><a href="livros/solo.pdf" download="solo">Baixar Solo Leveling em PDF</a></li>
+        <!--Os navegadores modernos têm a capacidade de ler o pdf, então eles abrem o arquivo com a opção de download, se você quiser que faça o download direto sem abrir, basta colocar o parâmetro "download", no valor se coloca o nome que você quer que apareça no download.-->
+        <li><a href="livros/solozip.zip">Baixar Solo Leveling compactado em Zip</a></li>
+        <!--O arquivo Zip como está compactado já faz o download direto.-->
+    </ul>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte/Pré-formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript</p>
+    <code>
+        num = int(input('Digite um número'))
+        if num % 2 == 0:
+            print(f'O núero {num} é PAR')
+        else:
+            print(f'O número {num} é ÍMPAR')
+        print('Fim do programa')
+    </code>
+    <!--A tag code deixa a fonte monoespaçada, cada caractere ocupa o mesmo espaço, basta selecionar para perceber.-->
+    <pre>
+         <code>
+        num = int(input('Digite um número'))
+        if num % 2 == 0:
+            print(f'O núero {num} é PAR')
+        else:
+            print(f'O número {num} é ÍMPAR')
+        print('Fim do programa')
+        </code>
+    </pre>
+    <!--A tag "pre" faz com que o texto apareça no site igual está no código, ele mantém a estrutura.-->
+    <!--Dica: Se quiser dar tab em todas as linhas do texto ao mesmo tempo é só selecionar ele todo e clicar no tab, se quiser que ele volte em vez de ir para frente shift+tab.-->
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q>.</p>
+    <!--"q" vem de quote, que significa citação, o que estiver dentro da tag ganha aspas, porém diferente de adicionar aspas normalmente, aqui tem semântica, diz ao buscador que é uma citação.-->
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML para leigos:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/HTML_XHTML_and_CSS_For_Dummies/I8xhVj9qTUQC?hl=pt-BR&gbpv=1&dq=html+xhtml+e+css+para+leigos&pg=PP2&printsec=frontcover">
+        A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+    </blockquote>
+    <!--"blockquote" é uma citação completa, você pode adicionar parâmetro "cite" para colocar o link da citação, não aparece para o cliente, mas aparece para o buscador.-->
+    <h1>Abreviações</h1>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+    <!--"abbr" permite colocar o nome completo de alguma abreviação, se passar o mouse no texto o nome completo aparece.-->
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+    <!--"bdo" indica a direção do texto, "dir=rtl" é right to left e "dir=ltr" é left to right. Usado para línguas, pois algumas são de trás para frente.-->
+    
+
+</body>
+</html>

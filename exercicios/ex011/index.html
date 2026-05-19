@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <h2>Jeito do Guanabara</h2>
+    <p>Tente abrir este site em diversos dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h2>Jeito moderno indicado pela Gemini</h2>
+    <img src="imagens/foto-g.png" alt="Imagem" srcset="imagens/foto-p.png 300w, imagens/foto-m.png 700w, imagens/foto-g.png 1000w" >
+    <!--Este método é o mais indicado atualmente, o navegador escolhe a imagem ideal baseado na velocidade da internet e na tela do usuário. Os tamanhos indicados hoje são: 600px para mobile, 1000px para tablet e 2000px para desktop.-->
+    <!--Dica: não precisa usar o Gimp, existe o Squoosh.app, uma ferramenta gratuita do Google que você joga a foto e ele já te dá as versões redimensionadas e em WebP, que seria melhor que JPEG e PNG.-->
+    <h1>Reproduzir áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/musicagemini.mp3" controls></audio>
+    <p>Método responsivo</p>
+    <audio controls>
+        <source src="midia/so-voce.mp3" type="audio/mpeg">
+        <source src="midia/so-voce.ogg" type="audio/ogg">
+        <source src="midia/so-voce.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/so-voce.mp3">Clique aqui para baixar o aequivo MP3</a></p>
+    </audio>
+    <!--No método responsivo, você cria uma mídia em cada um dos formatos mais usados pelos navegadores (mp3, ogg e wav), ele vai tentar reproduzir o primeiro áudio, se não for compatível ele vai para o segundo e depois para o terceiro, se nenhum abrir, vai aparecer a frase digitada no parágrafo.-->
+
+    
+</body>
+</html>

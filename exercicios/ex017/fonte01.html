@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        
+        /*Na font-family, quando você escolhe uma fonte o VSC da uma combinação, se a primeira não existir no computador do cliente aparecerá a segunda, se também não tiver a segunda vai para a terceira, no caso acima qualquer fonte sans-serif (sem serifa).*/
+            font-size: 16px ;
+        /*Medidas absolutas
+        cm, mm, in (polegadas), pt, pc
+        
+        Medidas relativas
+        em (com base na altura do M maiúsculo), ex, rem, vw, vh, %
+        
+        px e em são as recomendadas
+        16px é o tamanho padrão, geralmente é igual a 1em.
+        O Guanabara recomenda o EM, pois trabalha com %, então se adapta a qualquer tela.*/
+
+            font-weight: 100;
+        /*Font-weight é a largura da fonte, pode escolher: lighter, normal, bold, bolder ou de 100 à 900 de centena em centena. Dando Ctrl+espaço aparecem todas as opções.*/
+
+            font-style: italic;
+
+            text-decoration:underline;
+        
+        }
+
+        h1 {
+            font: italic 100 3em arial, helvetica, sans-serif;
+            /*Acime está um exemplo de shorthand, onde todas as declarações de fonte foram feitas em uma única propriedade. Deve-se seguir a ordem: font-style, font-weight, font-size e font-family.*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti veniam fugit praesentium id, perferendis earum vel et laboriosam facere vitae nisi adipisci odio aperiam at. Saepe, assumenda. Odit, at quis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores facere perferendis quaerat repudiandae ad dolore eligendi veniam placeat dolores quo est quas assumenda dicta praesentium a, aut laboriosam illum deleniti.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus mollitia asperiores repellat atque sint maiores aut. Magni perspiciatis dolor ab labore doloribus vitae nesciunt, quod recusandae veniam, ad nobis velit.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, laborum! Eos culpa excepturi illum ex quod, amet laudantium sed architecto, maxime est, officia a eveniet modi tenetur consequuntur aperiam. Iste.</p>
+</body>
+</html>

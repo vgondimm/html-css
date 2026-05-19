@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video src="midia/Meuvideo720.Mp4.mp4" controls width="500px"></video>
+    <video controls poster="imagens/lobo.jpg.jpg" width="500px">
+        <source src="midia/Meuvideo720.Mp4.mp4" type="video/mp4">
+        <source src="midia/meuvideo.webm.webm" type="video/webm">
+        <source src="midia/meuvideo.mov.mov" type="video/mov">
+        <p>Seu navegador não tem compatibilidade com a reprodução de vídeos.</p>
+    </video>
+    <h1>Inserindo vídeo externo</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=WRKqX2cYaApe_BqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!--Usando o YouTube como exemplo: Abra um vídeo -> Compartilhar -> Incorporar -> Copiar. O código copiado já vem com a tag (iframe), é só colar no VSC. -->
+  
+</body>
+</html>
