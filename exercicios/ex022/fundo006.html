@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
             height: 98vh;
@@ -11,8 +11,15 @@
             background-image: url(imagens/wallpaper002.jpg);
             background-repeat: no-repeat;
             background-position: center;
-            background-size: cover;
+            background-size: cover; 
             /* Pode ser em px, %, auto (é o padrão, o navegador escolhe), mas o cover é o ideal, pois a imagem cobre toda a tela e não estica ou comprime, não desfigura. */
+            background-attachment: fixed; 
+            /* por padrão o background-attachment é "scroll", o fundo rola junto com o conteúdo. Quando usamos o valor "fixed" ele fica sempre fixo e apenas o conteúdo rola. */
+
+
+            /* Shorthand - background
+                color > image > position/size > repeat > attachment */
+            /* background: black url(imagens/wallpaper002.jpg) center/cover no-repeat fixed; */
         }
 
         main {
@@ -28,7 +35,7 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus sit natus quibusdam rerum, fugit aut laborum ea possimus explicabo iste sunt sed velit doloremque! Odio harum asperiores quidem vel quas?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ex dolor voluptatum unde, perspiciatis in eaque sequi, nostrum iusto alias consectetur optio natus adipisci exercitationem reiciendis qui porro earum nisi!qua Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus suscipit fugit dolorem fugiat vel assumenda iure distinctio doloremque aliquam impedit est accusamus quibusdam laudantium natus repudiandae ad, fuga, aspernatur nesciunt.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus sit natus quibusdam rerum, fugit aut laborum ea possimus explicabo iste sunt sed velit doloremque! Odio harum asperiores quidem vel quas?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ex dolor voluptatum unde, perspiciatis in eaque sequi, nostrum iusto alias consectetur optio natus adipisci exercitationem reiciendis qui porro earum nisi!qua Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus suscipit fugit dolorem fugiat vel assumenda iure distinctio doloremque aliquam impedit est accusamus quibusdam laudantium natus repudiandae ad, fuga, aspernatur nesciunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo atque modi aliquid dignissimos tempora est mollitia harum assumenda veniam, perspiciatis quasi asperiores neque voluptate magnam quaerat? Molestias perferendis deserunt quo velit ab magnam blanditiis odio delectus porro nobis modi suscipit unde repudiandae hic provident officia fuga earum, voluptas incidunt obcaecati eum! Inventore architecto natus debitis excepturi vel ex alias numquam dolor quasi eum! Natus ut in illo vel obcaecati quibusdam culpa accusantium quod, expedita commodi facilis enim debitis ea. Modi eveniet labore molestiae maxime animi illo ab exercitationem! Quae totam, sit, tenetur deserunt rerum provident molestiae modi at quibusdam aliquid, exercitationem qui! Facilis animi error non? Tenetur ab, minus vero nostrum autem dolorum nihil, ratione placeat beatae dolor quaerat. Odio, non, nobis provident mollitia odit omnis ducimus dignissimos impedit ab eligendi id fugit eos harum voluptate et consequuntur totam ipsum debitis? Quaerat dolores molestias, repellat, accusantium quis temporibus a at alias ab praesentium dolorem fugiat, asperiores quo cumque corporis odio adipisci recusandae beatae dolor. Tenetur aperiam numquam ab placeat assumenda saepe illum. Minima dicta autem atque quasi eos magnam deleniti veritatis et quas. Quod neque iure dignissimos, eius quas et harum delectus eveniet! Voluptatem corporis maiores quo officiis eaque ea? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos iusto animi eaque quibusdam. Dolor at doloribus natus accusamus ipsa, nulla aliquid beatae quibusdam corporis sequi quaerat est! Facere, qui nisi? Natus beatae quod numquam! Dolorem tenetur assumenda officiis dicta veniam. Neque eligendi deserunt facilis ut quibusdam doloremque voluptatum fugiat facere soluta obcaecati rerum perferendis debitis in cupiditate ducimus iure ab unde, fuga provident dolorem quisquam eius. Placeat sit explicabo aperiam pariatur fugit iusto fuga, repudiandae velit. Saepe voluptatem commodi vitae perspiciatis libero totam, nam dolorem incidunt, hic aliquid omnis adipisci reprehenderit ut! Corporis repudiandae veniam ullam eveniet aperiam explicabo cumque.</p>
     </main>
 </body>
 </html>
