@@ -19,10 +19,23 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
         }
+
+        #zebrado tr:nth-child(2n) {
+            background-color: lightgray;
+            /* o 2n significa que o efeito será aplicado de 2 em 2. Também pode usar odd (ímpar) para todas as ímpares receberem o efeito ou even (par), para todas as pares receberem o efeito*/
+        }
+
     </style>
 </head>
 <body>
@@ -30,10 +43,12 @@
     <!-- As tabelas grandes devem ter semântica, sua anatomia deve ser estabelecida, ter thead, tbody e tfoot (não obrigatório). -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <!-- scope é a referência, no caso esta th faz referência aos dados da coluna, por isso col. O scope diz ao buscador a quais dados aquela célula se refere. -->
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -52,8 +67,74 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td>00000</td>
+                <th scope="row">Total de Habitantes</th>
+                <!-- este scope faz referência aos dados da linha, por isso row. -->
+                <td>84 352 783</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h1>Nova tabela para testar efeito zebrado</h1>
+    <table id="zebrado">
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 264 943</td>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 264 943</td>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td>84 352 783</td>
             </tr>
         </tfoot>
     </table>
